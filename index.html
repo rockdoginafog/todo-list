@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+
+  <main class="hero">
+
+    <h1>Todo</h1>
+
+    <div class="to-do-list">
+
+      <div class="task-maker">
+        <form class="add-a-task">
+          <input type="text" class="input" placeholder="Create a new todo...">
+          <button class="add">Add</button>
+        </form>
+      </div>
+
+      <div class="to-do-tasks">
+
+      </div>
+
+    </div>
+
+    <div class="buttons">
+      <div class="left">
+        <p class="white"><span id="number">0</span> <span id='items'>items</span> left</p>
+      </div>
+      <div class="center">
+        <button class="all transparent">All <span id='all-number'>0</span></button>
+        <button class="active transparent">Active <span id='active-number'>0</span></button>
+        <button class="completed transparent">Completed <span id='completed-number'>0</span></button>
+      </div>
+      <div class="right">
+        <button class="clear-completed transparent">Clear completed</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Krystian Czeszewski</a>.
+    </div>
+
+  </main>
+
+  <script src="index.js"></script>
+  
+</body>
+</html>
+

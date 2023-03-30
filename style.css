@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root{
+    --very-dark-blue: hsl(235, 21%, 11%);
+    --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+    --light-grayish-blue: hsl(234, 39%, 85%);
+    --light-grayish-blue-hover: hsl(236, 33%, 92%);
+    --dark-grayish-blue: hsl(234, 11%, 52%);
+    --very-dark-grayish-blue: hsl(233, 14%, 35%);
+    --very-dark-grayish-blue2: hsl(237, 14%, 26%);
+    --red: hsl(8, 100%, 50%);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/bg-desktop-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+    background-color: var(--very-dark-blue);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+    margin-bottom: 0.5em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    font-size: 3em;
+}
+
+p{
+    opacity: 0.7;
+}
+
+.hero{
+    padding: 2em;
+    width: 600px;
+}
+
+.task, .task-maker{
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--very-dark-desaturated-blue);
+    padding: 1em;
+    border-bottom: 1px solid white;
+    color: white;
+    overflow-wrap: anywhere;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+.checked{
+    background: rgb(192,88,243);
+    background: linear-gradient(135deg, rgba(192,88,243,1) 0%, rgba(87,221,255,1) 100%);
+}
+
+.to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.to-do-tasks{
+    background-color: var(--very-dark-desaturated-blue);
+}
+
+.input{
+    background-color: var(--very-dark-desaturated-blue);
+    border: none;
+    width: 100%;
+    color: white;
+    opacity: 0.7;
+    padding: 0.2em;
+}
+
+.add{
+    background: transparent;
+    color: white;
+    width: 35px;
+}
+
+
+.add-a-task{
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+.buttons{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    padding: 1em;
+    font-size: 1.4em;
+}
+
+.left, .center, .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+.transparent{
+    background: transparent;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.transparent:hover{
+    text-decoration: underline;
+    scale: 1.1
+}
+
+.attribution{
+    color: white;
+    text-align: center;
+    bottom: 0;
+    opacity: 0.3;
+    margin-top: 5em;
+}
+
+.attribution a{
+    color: white;
+}
+
+.white{
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.error{
+    color: var(--red);
+    text-align: center;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+@media (max-width: 335px){
+
+    body{
+        background-size: 110% 250px;
+    }
+
+    .hero{
+        width: 300px;
+    }
+}
